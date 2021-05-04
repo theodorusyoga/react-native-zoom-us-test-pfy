@@ -9,7 +9,7 @@ import {
   NativeEventEmitter,
 } from 'react-native';
 
-import ZoomUs, {ZoomEmitter} from 'react-native-zoom-us';
+import ZoomUs, {ZoomEmitter} from './zoom';
 import {extractDataFromJoinLink} from './extractDataFromJoinLink';
 
 import sdkJwtTokenJson from './api/sdk.jwt.json';
@@ -20,8 +20,8 @@ declare const global: {HermesInternal: null | {}};
 // There are TWO options to initialize zoom sdk: without jwt token OR with jwt token
 
 // 1a. without jwt token (quick start while developing)
-const skdKey = '';
-const sdkSecret = '';
+const skdKey = 'AXs14ee11FQ6sAWa1V7fQGtfR0kgq7meypVH';
+const sdkSecret = '8QFGT3xwqy86FGwtWklTKbSCCDfTnU6S0CPP';
 
 // 1b. with jwt token (should be used in production)
 // - Replace you sdkKey and sdkSecret and run the following in the terminal:
@@ -31,13 +31,13 @@ const sdkJwtToken = sdkJwtTokenJson.jwtToken;
 
 // 2a. `TODO` Fill in start meeting data:
 const exampleStartMeeting = {
-  meetingNumber: '',
+  meetingNumber: '79930145265',
   // More info (https://devforum.zoom.us/t/non-login-user-host-meeting-userid-accesstoken-zoomaccesstoken-zak/18720/3)
-  zoomAccessToken: '', // `TODO`: Use API at https://marketplace.zoom.us/docs/api-reference/zoom-api/users/usertoken to get `zak` token
+  zoomAccessToken: 'cgqksgGqSItXGnJr4CVz5EppGlAehMe6Y1ve62aEPdc.BgYgSkNtclpjQ0UxVnZuZTh2UndJdFh5MDZ3bzNJTDMzb0ZANTg3MjFmZjA5NzM4MTI0YjIzNTBhZGI4ZDZjNDkxNmY4MTZmMmM2MmYwNDA3MTYxN2RmYmFkZjE4M2VkMmI3MgAMM0NCQXVvaVlTM3M9AAAAAAF5NqA6eAASdQAAAA', // `TODO`: Use API at https://marketplace.zoom.us/docs/api-reference/zoom-api/users/usertoken to get `zak` token
 };
 
 // 2b. `TODO` Fill in invite link:
-const exampleJoinLink = 'https://us02web.zoom.us/j/MEETING_NUMBER?pwd=PASSWORD';
+const exampleJoinLink = 'https://us02web.zoom.us/j/76765125045?pwd=VUdRUlVaemtVL1lqWnVRMVFzUE1YZz09';
 
 const exampleJoinMeeting = extractDataFromJoinLink(exampleJoinLink);
 

@@ -23,6 +23,7 @@ allprojects {
     repositories {
         flatDir {
             dirs "$rootDir/../node_modules/react-native-zoom-us/android/libs"
+            dirs 'libs'
         }
         mavenLocal()
         maven {

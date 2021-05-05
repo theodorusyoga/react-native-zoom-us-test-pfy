@@ -10,7 +10,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-import ch.milosz.reactnative.RNZoomUsModule;
+import com.zoomustest.RNZoomUsModule;
 
 public class RNZoomUsPackage implements ReactPackage {
     @Override
